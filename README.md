@@ -1,3 +1,10 @@
+# CharRNN with n-gram/self Anti Model
+
+This is an ongoing project for my Honors Thesis at Boston College. I am implementing CharRNNs trained various [anti-models](https://arxiv.org/abs/2010.11855) to attenuate unwanted signals in SMILES strings (i.e., n-gram signals or the distribution of molecules generated from the CharRNN to generate more diverse molecules)
+
+
+----
+
 # Molecular Sets (MOSES): A benchmarking platform for molecular generation models
 
 [![Build Status](https://travis-ci.com/molecularsets/moses.svg?branch=master)](https://travis-ci.com/molecularsets/moses) [![PyPI version](https://badge.fury.io/py/molsets.svg)](https://badge.fury.io/py/molsets)
