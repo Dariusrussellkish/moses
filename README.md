@@ -190,13 +190,13 @@ Besides standard uniqueness and validity metrics, MOSES provides other metrics t
         <td>1.0</td> 
         <td>0.9993</td>
         <td>0.042928</td>
-        <td>0.48116<\td>
+        <td>0.48116</td>
         <td>0.619531</td>
-        <td>0.575498<\td>
+        <td>0.575498</td>
         <td>0.999832</td>
-        <td>0.998815<\td>
+        <td>0.998815</td>
         <td>0.965863</td>
-        <td>0.088219<\td>
+        <td>0.088219</td>
         <td>0.859061</td>
         <td>0.853058</td>
         <td>0.995800</td>
