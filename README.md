@@ -2,6 +2,27 @@
 
 This is an ongoing project for my Honors Thesis at Boston College. I am implementing CharRNNs trained various [anti-models](https://arxiv.org/abs/2010.11855) to attenuate unwanted signals in SMILES strings (i.e., n-gram signals or the distribution of molecules generated from the CharRNN to generate more diverse molecules)
 
+```
+{'valid': 0.9262,
+ 'unique@1000': 1.0,
+ 'unique@10000': 0.9993,
+ 'FCD/Test': 0.04292790553265036,
+ 'SNN/Test': 0.6195312055820872,
+ 'Frag/Test': 0.9998317193730303,
+ 'Scaf/Test': 0.9658629152467882,
+ 'FCD/TestSF': 0.481166825158283,
+ 'SNN/TestSF': 0.575498474223925,
+ 'Frag/TestSF': 0.998815400940216,
+ 'Scaf/TestSF': 0.08821967847376566,
+ 'IntDiv': 0.8590609119592275,
+ 'IntDiv2': 0.8530576026831922,
+ 'Filters': 0.9958000431872166,
+ 'logP': 0.034807127076146666,
+ 'SA': 0.022655957513033266,
+ 'QED': 0.0013843475534316824,
+ 'weight': 2.1323755263842763,
+ 'Novelty': 0.7610575197659623}
+```
 
 ----
 
@@ -162,6 +183,24 @@ Besides standard uniqueness and validity metrics, MOSES provides other metrics t
       <td>0.8503±0.0005</td>
       <td>0.9943±0.0034</td>
       <td>0.8419±0.0509</td>
+    </tr>
+    <tr>
+        <td>CharRNN AM 1</td>
+        <td>0.9262</td> 
+        <td>1.0</td> 
+        <td>0.9993</td>
+        <td>0.042928</td>
+        <td>0.48116<\td>
+        <td>0.619531</td>
+        <td>0.575498<\td>
+        <td>0.999832</td>
+        <td>0.998815<\td>
+        <td>0.965863</td>
+        <td>0.088219<\td>
+        <td>0.859061</td>
+        <td>0.853058</td>
+        <td>0.995800</td>
+        <td>0.761057</td>
     </tr>
     <tr>
       <td>AAE</td>
