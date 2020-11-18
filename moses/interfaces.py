@@ -18,9 +18,7 @@ class MosesTrainer(ABC):
             collate_fn = self.get_collate_fn(model)
         return DataLoader(data, batch_size=self.config.n_batch,
                           shuffle=shuffle,
-                          num_workers=self.n_workers, collate_fn=collate_fn,
-                          worker_init_fn=set_torch_seed_to_all_gens
-                          if self.n_workers > 0 else None)
+                          collate_fn=collate_fn)
 
     def get_collate_fn(self, model):
         return None
