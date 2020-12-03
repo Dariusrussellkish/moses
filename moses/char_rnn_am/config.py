@@ -30,6 +30,8 @@ def get_parser(parser=None):
                            help='Number of threads')
     train_arg.add_argument('--n_workers', type=int, default=1,
                            help='Number of workers for DataLoaders')
+    train_arg.add_argument('--alpha', type=float, default=1.,
+                           help='Alpha value for anti model weighting')
 
     return parser
 

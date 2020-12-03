@@ -18,7 +18,8 @@ class MosesTrainer(ABC):
             collate_fn = self.get_collate_fn(model)
         return DataLoader(data, batch_size=self.config.n_batch,
                           shuffle=shuffle,
-                          collate_fn=collate_fn)
+                          collate_fn=collate_fn,
+                          pin_memory=False)
 
     def get_collate_fn(self, model):
         return None
@@ -29,4 +30,8 @@ class MosesTrainer(ABC):
 
     @abstractmethod
     def fit(self, model, train_data, val_data=None):
+        pass
+
+    @abstractmethod
+    def fit_am(self, model, train_data, negative_data, parameters, val_data=None):
         pass
